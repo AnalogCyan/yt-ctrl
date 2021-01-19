@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "YT-CTRL",
+  "description": "Control YT while it's in the background!",
+  "version": "0.1.0",
+  "permissions": ["tabs", "*://*.youtube.com/*"],
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "commands": {
+    "Rewind": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1"
+      },
+      "description": "Skip Back",
+      "global": true
+    },
+    "Fast-forward": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2"
+      },
+      "description": "Skip Forward",
+      "global": true
+    }
+  }
+}
